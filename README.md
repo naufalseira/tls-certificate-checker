@@ -27,7 +27,7 @@ A powerful command-line tool for analyzing and verifying SSL/TLS certificates of
 
 ```bash
 # Clone the repository
-git clone https://github.com/username/tls-certificate-checker.git
+git clone https://github.com/naufalseira/tls-certificate-checker.git
 
 # Navigate to the project directory
 cd tls-certificate-checker
@@ -36,14 +36,14 @@ cd tls-certificate-checker
 go build -o tls-checker
 
 # Run the application
-./tls-checker
+go run tls-certificate-checker.go
 ```
 
 ## 💻 Usage
 
 1. Launch the application:
 ```bash
-./tls-checker
+go run tls-certificate-checker.go
 ```
 
 2. Enter the domain for analysis:
@@ -89,7 +89,3 @@ Enter Web Address (example: example.com):
 ## 📝 License
 
 This project is distributed under the MIT License. See the `LICENSE` file for more information.
-
----
-
-**Note**: This tool is designed for security analysis purposes. Always ensure you have proper authorization before scanning domains you don't own.
