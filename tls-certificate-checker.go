@@ -149,7 +149,7 @@ func generateWarnings(info *CertificateInfo) []string {
 func displayResults(info *CertificateInfo) {
     fmt.Println("")
     fmt.Println("--------------------------------------------------------")
-    fmt.Println("|                    Scanning Result                   |")
+    fmt.Println("|                    Analysis Result                   |")
     fmt.Println("--------------------------------------------------------")
     fmt.Printf("Host            : %s\n", info.Host)
     fmt.Printf("TLS Version     : %s\n", info.TLSVersion)
@@ -158,7 +158,7 @@ func displayResults(info *CertificateInfo) {
     fmt.Printf("Subject         : %s\n", info.Subject)
     fmt.Printf("Valid from      : %s\n", info.ValidFrom.Format("2006-01-02"))
     fmt.Printf("Valid until     : %s\n", info.ValidUntil.Format("2006-01-02"))
-    fmt.Printf("Time remaining  : %d hari\n", info.ExpirationDays)
+    fmt.Printf("Time remaining  : %d days\n", info.ExpirationDays)
     fmt.Printf("Security Rating : %s\n", info.SecurityRating)
     
     if len(info.DNSNames) > 0 {
